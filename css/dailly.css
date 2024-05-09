@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+/* 데일리 금융 두번째 도전 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid darkblue; */
+}
+:root {
+  font-family: "Gothic A1", sans-serif;
+}
+.inner {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 0;
+  align-items: center;
+}
+h1 {
+  position: relative;
+  font-size: 45px;
+  color: #000;
+  font-weight: 400;
+}
+h1::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  top: -3px;
+  left: -14px;
+}
+.subtitle {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 700;
+  align-self: stretch;
+}
+.copy {
+  display: -webkit-box;
+  overflow: hidden;
+  color: #FFF;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-height: 16px;
+  max-height: 3.9rem;
+  font-weight: 400;
+  font-size: 14px;
+}
+.box.b05 .subtitle, .box.b05 .copy, .box.b05 .date, .box.b05 .tag, .box.b09 .subtitle, .box.b09 .copy, .box.b09 .date, .box.b09 .tag {
+  color: #646464;
+}
+a {
+  text-decoration: none;
+}
+.date {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+
+}
+.tag {
+  display: flex;
+  padding: 5px 10px;
+  align-items: flex-start;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #FFF;
+}
+.box.b05 .tag, .box.b09 .tag {
+  border: 1px solid #C4C4C4;
+}
+p {
+  color: #666;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #666666;
+  text-align: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 171px;
+  height: 65px;
+}
+.maincopy {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px 0;
+  align-content: flex-start;
+  align-self: stretch;
+}
+.box {
+  width: 290px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  justify-content: space-between;
+}
+.box.b01 {
+  background: url(/ex/images/dstore/dstore1.jpg) no-repeat 100% / cover;
+}
+.box.b02 {
+  background-color: #DB0D26;
+  align-items: flex-start;
+}
+.box.b03, .box.b10 {
+  margin: 0 20px;
+  padding: 20px 20px;
+  gap: 10px;
+}
+.box.b06 {
+  margin: 0 20px 0 0;
+}
+.box.b03, .box.b05, .box.b09, .box.b11 {
+  background-color: #F5F6F7;
+}
+.box.b04 {
+  background: url(/ex/images/dstore/dstore2.jpg) no-repeat 100% / cover;
+}
+.box.b06 {
+  width: 600px;
+  height: 230px;
+  background: url(/ex/images/dstore/dstore3.jpg) no-repeat 100% / cover;
+}
+.box.b07 {
+  background: url(/ex/images/dstore/dstore4.jpg) no-repeat 100% / cover;
+}
+.box.b08 {
+  background: url(/ex/images/dstore/dstore5.jpg) no-repeat 100% / cover;
+}
+.box.b10 {
+  background: url(/ex/images/dstore/dstore6.jpg) no-repeat 100% / cover;
+}

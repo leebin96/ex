@@ -10,14 +10,115 @@
 }
 :root {
   font-family: "Gothic A1", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
+/* 이너는 더작은 화면인 사람들을 위한 안전공간임 */
 .inner {
   width: 1200px;
-  /* display: flex;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  gap: 60px;
+}
+
+
+section:nth-child(1) {
+  display: flex;
+  height: 368px;
+  padding: 0px 208px 0px 194px;
+  align-items: center;
+
+}
+section:nth-child(1) > .inner {
+  display: flex;
+  width: 1200px;
+  padding-top: 80px;
+  flex-direction: column;
+
+  gap: 18px;
+}
+/* section:nth-child(1) > .inner > h1 {
+  padding-bottom: 18px;
+}
+section:nth-child(1) > .inner > h2 {
+  padding-bottom: 18px;
+} */
+section:nth-child(1) > .inner > h1 {
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+section:nth-child(1) > .inner > h2 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+section:nth-child(1) > .inner > p {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+
+}
+section:nth-child(2) {
+  background: url(/ex/images/lotte/lotte.jpg) no-repeat 50% 0 /100% 300px;
+  /* background: url(/ex/images/lotte/lotte.jpg) no-repeat 50% 0 /contain;
+  background: url(/ex/images/lotte/lotte.jpg) no-repeat 50% 0 /cover;
+  background: url(/ex/images/lotte/lotte.jpg) no-repeat 50% 0 /100% auto;
+  background: url(/ex/images/lotte/lotte.jpg) no-repeat 50% 0 /100% 100% 등 다양하게 있음 */
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;  */
+  gap: 10px;
+  align-self: stretch;
+}
 
-  /* 스스로 레이아웃 가운데정렬 */
-  margin: 0 auto;
+section:nth-child(2) > .inner {
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+section:nth-child(2) > .inner > div {
+  display: flex;
+
+}
+section:nth-child(2) > .inner > h2 {
+  font-weight: normal;
+  color: aliceblue;
+}
+section:nth-child(2) > .inner > h2 > span {
+  font-weight: 900;
+}
+section:nth-child(2) > .inner > div > article:nth-child(2) {
+  padding-top: 100px;
+}
+section:nth-child(2) > .inner > div > article:nth-child(3) {
+  padding-top: 50px;
+}
+section:nth-child(2) > .inner > div > article > div {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 0 40px;
+  gap: 20px;
+}
+section:nth-child(2) .inner h3 {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+}
+section:nth-child(2) .inner h2 {
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 500;
+}
+section:nth-child(2) .inner p {
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 400;
 }

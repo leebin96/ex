@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* 데일리 금융 샘플 pc */
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+* {
+  outline: 1px solid darkblue;
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

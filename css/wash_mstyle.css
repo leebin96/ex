@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+body {
+  min-width: 320px;
+}
+section {
+  gap: 20px;
+  overflow: hidden;
+}
+.txtBox {
+  gap: 5px;
+  padding: 0 0 0 0;
+}

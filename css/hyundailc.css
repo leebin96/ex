@@ -1,0 +1,371 @@
+@charset "utf-8";
+
+/* 현대 LC 샘플 pc */
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 1px solid darkblue;
+}
+:root {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+body {
+  display: flex;
+  width: 1440px;
+  height: 1024px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+h1 {
+  color: #FFF;
+
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}
+h2 {
+  color: black;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.one .inner h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #009882;
+  text-align: center;
+}
+.two .right .inner600 h2 {
+  color: #FFF;
+
+}
+.four .inner h2 {
+  color: #FFF;
+
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h3 {
+  color: #FFF;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+h3:nth-of-type(1) {
+  align-self: stretch;
+}
+.three .left .inner600 h3, .three .right .inner600 h3 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+h4 {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.two .right div h4 {
+  align-self: stretch;
+}
+h4:nth-of-type(1), h4:nth-of-type(3) {
+  text-align: center;
+  width: 960px;
+}
+h5 {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+a {
+  background: #009882;
+  display: flex;
+  width: 200px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+a span:nth-child(1) {
+  color: #009882;
+}
+.three .left a {
+  background: none;
+}
+
+section {
+  display: flex;
+  height: 830px;
+}
+
+.one {
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  background: url(/ex/images/hyundailc/hyundai.jpg) no-repeat 50% / cover;
+}
+.one .inner {}
+.one .inner div {
+  padding-bottom: 100px;
+}
+.one .inner a {
+  display: flex;
+  padding: 14px 64px;
+  justify-content: center;
+  align-items: center;
+}
+.two {
+  display: flex;
+  height: 830px;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.two .left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  width: 690px;
+  height: 360px;
+}
+.two .left .inner600 {
+  display: flex;
+  width: 600px;
+  padding: 150px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  align-self: stretch;
+}
+
+.two .right {
+  background: #009882;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.two .right .inner600 {
+  width: 600px;
+  padding: 220px 0px 0px 150px;
+  flex-direction: column;
+}
+.two .right .inner600 div {
+  display: flex;
+  padding: 20px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.two .right .inner600 div:nth-child(2) {
+  display: flex;
+  padding-bottom: 30px;
+}
+.three {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.three .left {
+  display: flex;
+  padding-top: 100px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.three .left .inner600 {
+  background: url(/ex/images/hyundailc/hyundai2.jpg) no-repeat 100% 100%/ cover;
+  width: 600px;
+  height: 470px;
+}
+
+.three .right {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.three .right .inner600 {
+  display: flex;
+  width: 600px;
+  height: 830px;
+  padding-top: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+.three .right .inner600 div {
+  background: url(/ex/images/hyundailc/hyundai3.jpg) no-repeat 100% 100% / cover;
+  width: 600px;
+  height: 470px;
+  flex-shrink: 0;
+}
+.four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  background: url(/ex/images/hyundailc/hyundai4.jpg) 100% / cover no-repeat;
+}
+.inner {
+  display: flex;
+  width: 960px;
+  padding-top: 250px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+}
+.four .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 100px;
+  padding-top: 130px;
+}
+.four .inner a {
+  display: flex;
+  width: 200px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+/* section {
+  display: flex;
+  height: 830px;
+  padding: 0px 240px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.inner {
+  width: 960px;
+  display: flex;
+  padding-top: 250px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+.inner h1 {
+  color: #FFF;
+
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}
+section:nth-child(1) > .inner > h2 {
+  color: #009882;
+
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+p {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 100px;
+}
+
+.inner a {
+  display: flex;
+  padding: 14px 64px;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  background: #009882;
+}
+section:nth-child(2) {
+  display: flex;
+  height: 830px;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-direction: row;
+}
+section:nth-child(2) .left {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+section .inner600 {
+  display: flex;
+  width: 600px;
+  padding: 150px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  align-self: stretch;
+}
+section:nth-child(2) .right {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+
+  background: #009882;
+}
+section .right .inner600 {
+  display: flex;
+  width: 600px;
+  padding: 220px 0px 0px 150px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section .right .inner600 div {
+  display: flex;
+  padding: 20px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+section:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+} */

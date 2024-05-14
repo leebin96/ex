@@ -15,23 +15,26 @@
   margin: 0 auto;
 }
 header {
+  width: 100%;
   padding: 36px 120px 26px 120px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+
   border-bottom: 1px;
   border-color: black;
   height: 100px;
+}
+
+.logo {
+  width: 185px;
+  height: 19px;
+  background: url(/ex/images/naver/naverlogo.jpg) no-repeat 100% / cover;
 }
 .header_inner {
   width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.logo {
-  width: 185px;
-  height: 19px;
-  background: url(/ex/images/naver/naverlogo.jpg) no-repeat 100% / cover;
 }
 .header_nav {
   display: flex;
@@ -71,13 +74,14 @@ button:hover {
 }
 
 main {
+  width: 100%;
   padding: 0px 120px;
   display: flex;
   justify-content: center;
 }
 .main_inner {
   display: flex;
-  width: 1200px;
+  width: 100%;
   gap: 20px;
   padding: 50px 0;
 }

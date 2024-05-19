@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* 나브01 연습 샘플 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul.menu {
+    display: flex;
+    justify-content: center;
+    background: #555;
+    height: 80px;
+    font-size: 1.5rem;
+    color: #fff;
+    /* a가 화이트기 때문에 컬러 안써도 상관없음 */
+}
+
+ul.menu>li {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    border-right: 1px solid #777;
+}
+
+ul.menu>li:first-child {
+    border-left: 1px solid #777;
+}
+
+ul.menu>li>a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* flex: 0 0 100%; */
+}

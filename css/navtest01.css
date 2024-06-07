@@ -28,7 +28,7 @@ ul.menu {
     /* a가 화이트기 때문에 컬러 안써도 상관없음 */
 }
 
-ul.menu>li {
+ul.menu > li {
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -36,14 +36,14 @@ ul.menu>li {
     border-right: 1px solid #777;
 }
 
-ul.menu>li:first-child {
+ul.menu > li:first-child {
     border-left: 1px solid #777;
 }
 
-ul.menu>li>a {
+ul.menu > li > a {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
-    /* flex: 0 0 100%; */
+    flex: 0 0 100%;
 }
